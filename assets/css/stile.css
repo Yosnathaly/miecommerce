@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    background-color: rgb(235, 228, 228);
+    font-family: "roboto";
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: rgb(248, 167, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.section{
+    grid-area:section;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+    gap: 1em;
+    padding: 16px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: "navbar navbar" "aside section" "footer footer";
+    grid-template-rows: 1fr 4fr 0,5fr;
+    grid-template-columns: 1fr 5fr ;
+    height: 100vh;
+}
+.title{
+    color: #ffff;
+    font-size: 24px;
+    font-weight: 800;
+}
+.aside_title{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.aside_categorias{
+    font-size: 18px;
+    color: rgb(8, 8, 8);
+
+}
+.aside_quantity{
+    font-size: 18px;
+    color: rgb(76, 68, 68);
+}
+.section_card {
+     width: 300px;
+     height: 320px;   
+     background-color: rgb(253, 249, 249);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+
+.section_img{
+    width: 100%;
+    height: 200px;
+}
+
+.card_button{
+    width: 100%;
+    color: white;
+    background-color: rgb(248, 167, 248);
+}
